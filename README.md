@@ -1,22 +1,48 @@
-# 📐 Add Comments to Implementation of this
+# HTML Code Explanation
 
-Work with a partner to add comments that describe the functionality of the code found in [Unsolved](./Unsolved/script.js).
+## Document Structure
+- `<!DOCTYPE html>`: Declares the document type and version of HTML.
+- `<html lang="en">`: Sets the language of the document to English.
 
-## Notes
+## Head Section
+- `<meta charset="UTF-8">`: Specifies the character encoding as UTF-8.
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Ensures the page is responsive to different screen sizes.
+- `<title>Objects</title>`: Sets the title of the webpage to "Objects".
 
-Refer to the documentation:
+## Body Section
+- `<h1 style="text-align:center;">✨ Open the Console to See What's Happening ✨</h1>`: Main heading centered with inline CSS, instructing users to open the console.
+- `<script src="script.js"></script>`: Links to an external JavaScript file `script.js`.
 
-[MDN Web Docs on this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
-## 🏆 Bonus
+# JavaScript Code Explanation
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+## Global Context
+- `console.log(this)`: Logs the global `this` context, which refers to the `window` object.
+
+## Function Definitions
+
+### helloThis
+- `helloThis()`: Logs the `this` context inside the function.
+
+## Objects and Methods
+
+### child Object
+- `child.age`: Age property, set to 10.
+- `child.ageTenYears()`: Logs `age + 10`, with `this` referring to the `child` object.
+
+### investor Object
+- `investor.name`: Name property, set to "Cash Saver".
+- `investor.investment.initialInvestment`: Initial investment property, set to 5000.
+- `investor.investment.investmentGrowth()`: Logs the growth of `initialInvestment` by 15%, with `this` referring to the `investment` object.
+
+## Function Calls
+- `helloThis()`
+- `child.ageTenYears()`
+- `investor.investment.investmentGrowth()`
+
 
 * What does the `window` object represent? Is the global object always the `window` object?
 The window object represents an open window in a browser.
 If we are running code inside a browser, the global object is the 'window' object.
 
-Use [Google](https://www.google.com) or another search engine to research this.
 
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
